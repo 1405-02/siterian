@@ -1,0 +1,8 @@
+{
+  "name": "Remix Team Rian Martins - Treinamento de Alta Performance",
+  "description": "Personal Trainer presencial em Bragança Paulista (SP) e consultoria fitness online com Rian Martins (CREF 194592-G/SP). Hipertrofia, emagrecimento e biomecânica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
