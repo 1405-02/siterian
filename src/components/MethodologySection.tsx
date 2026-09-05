@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BarChart3, Sliders, Utensils, Smartphone, CheckCircle, ChevronRight, X } from 'lucide-react';
+import { BarChart3, Sliders, Utensils, Smartphone, MessageCircle, CheckCircle, ChevronRight, X } from 'lucide-react';
 import { METHODOLOGY_PILLARS } from '../data/fitnessData';
 import { Pillar } from '../types';
 
@@ -16,6 +16,9 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({ onOpenAp
         return <BarChart3 className="w-5 h-5" />;
       case 'tune':
         return <Sliders className="w-5 h-5" />;
+      case 'chat':
+      case 'message-circle':
+        return <MessageCircle className="w-5 h-5" />;
       case 'restaurant':
         return <Utensils className="w-5 h-5" />;
       case 'smartphone':

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Award, Flame, Target, ShieldCheck, Dumbbell, Sparkles } from 'lucide-react';
+import { ArrowRight, Award, Flame, Target, ShieldCheck, Sparkles } from 'lucide-react';
 import { COACH_INFO } from '../data/fitnessData';
 
 interface HeroSectionProps {
@@ -74,10 +74,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
                 <div className="flex flex-col">
                   <span className="font-['Space_Grotesk',sans-serif] text-xs font-bold text-[#e4e1e7] uppercase">
-                    +100 Alunos
+                    Metodologia
                   </span>
                   <span className="font-['Space_Grotesk',sans-serif] text-[11px] text-[#94a3b8]">
-                    Transformados
+                    Comprovada
                   </span>
                 </div>
               </div>
@@ -139,8 +139,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                       {COACH_INFO.title}
                     </p>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-[#ff5708] flex items-center justify-center text-white shadow-md">
-                    <Dumbbell className="w-5 h-5" />
+                  <div className="w-10 h-10 rounded-full overflow-hidden bg-black border border-[#ff5708]/40 flex items-center justify-center shadow-md shrink-0">
+                    <img
+                      src="/images/logo.png"
+                      alt="Logo Team Rian Martins"
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
                   </div>
                 </div>
 

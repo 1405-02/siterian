@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, XCircle, Zap, Shield, Sparkles } from 'lucide-react';
+import { CheckCircle, XCircle, Sparkles } from 'lucide-react';
 import { PLANS } from '../data/fitnessData';
 import { Plan } from '../types';
 
@@ -120,29 +120,6 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onSelectPlan }) => {
               </div>
             );
           })}
-        </div>
-
-        {/* Guarantee Banner */}
-        <div className="mt-12 p-4 sm:p-5 rounded-xl bg-[#1b1b1f] border border-[#2a292e] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-[#ff5708]/15 flex items-center justify-center text-[#ff5708] shrink-0">
-              <Shield className="w-5 h-5" />
-            </div>
-            <div>
-              <p className="font-['Space_Grotesk',sans-serif] text-sm font-bold uppercase text-[#e4e1e7]">
-                Garantia Incondicional de 7 Dias
-              </p>
-              <p className="font-['Manrope',sans-serif] text-xs text-[#94a3b8]">
-                Se você não se adaptar à metodologia ou ao aplicativo, devolvemos 100% do seu investimento.
-              </p>
-            </div>
-          </div>
-          <div className="text-right sm:text-right shrink-0">
-            <span className="inline-flex items-center gap-1.5 text-xs text-[#7bd0ff] font-['Space_Grotesk',sans-serif] font-semibold">
-              <Zap className="w-3.5 h-3.5 text-[#ff5708]" />
-              Início imediato após anamnese
-            </span>
-          </div>
         </div>
       </div>
     </section>

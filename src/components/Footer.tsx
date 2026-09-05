@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dumbbell, ShieldCheck, Instagram, MessageCircle, Youtube, Mail, MapPin, Clock } from 'lucide-react';
+import { ShieldCheck, Instagram, MessageCircle, Mail, MapPin } from 'lucide-react';
 import { COACH_INFO } from '../data/fitnessData';
 
 export const Footer: React.FC = () => {
@@ -10,8 +10,13 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Creds (4 cols) */}
           <div className="lg:col-span-4 flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-[#ff5708] flex items-center justify-center text-white">
-                <Dumbbell className="w-4 h-4" />
+              <div className="w-10 h-10 rounded-lg overflow-hidden bg-black border border-[#ff5708]/40 flex items-center justify-center shadow-md shrink-0">
+                <img
+                  src="/images/logo.png"
+                  alt="Logo Team Rian Martins"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <span className="font-['Oswald',sans-serif] text-2xl uppercase tracking-wider text-[#e4e1e7] font-bold">
                 Team Rian Martins
@@ -28,7 +33,12 @@ export const Footer: React.FC = () => {
                 CREF 194592-G/SP
               </div>
               <div className="px-2.5 py-1 rounded bg-[#1b1b1f] border border-[#2a292e] text-[#e4e1e7] font-['Space_Grotesk',sans-serif] text-[11px] uppercase font-bold flex items-center gap-1.5">
-                <Dumbbell className="w-3.5 h-3.5 text-[#7bd0ff]" />
+                <img
+                  src="/images/logo.png"
+                  alt="Logo"
+                  className="w-3.5 h-3.5 object-cover rounded-full"
+                  referrerPolicy="no-referrer"
+                />
                 Excellence Coach
               </div>
             </div>
@@ -53,21 +63,6 @@ export const Footer: React.FC = () => {
               <li>
                 <a href="#planos" className="hover:text-[#ff5708] transition-colors">
                   Planos &amp; Consultoria VIP
-                </a>
-              </li>
-              <li>
-                <a href="#calculadora" className="hover:text-[#ff5708] transition-colors">
-                  Simulador de Calorias &amp; Macros
-                </a>
-              </li>
-              <li>
-                <a href="#resultados" className="hover:text-[#ff5708] transition-colors">
-                  Transformações &amp; Métricas
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-[#ff5708] transition-colors">
-                  Dúvidas Frequentes
                 </a>
               </li>
             </ul>
@@ -100,15 +95,6 @@ export const Footer: React.FC = () => {
               >
                 <MessageCircle className="w-4 h-4" />
               </a>
-              <a
-                href={COACH_INFO.youtube}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="YouTube"
-                className="w-10 h-10 rounded-xl bg-[#1b1b1f] border border-[#2a292e] flex items-center justify-center text-[#e4e1e7] hover:bg-[#ff5708] hover:text-white hover:border-[#ff5708] transition-all"
-              >
-                <Youtube className="w-4 h-4" />
-              </a>
             </div>
           </div>
 
@@ -122,17 +108,6 @@ export const Footer: React.FC = () => {
               <span>Bragança Paulista - SP (Presencial)</span>
             </div>
             <div className="flex items-center gap-1.5 text-[#94a3b8]">
-              <MessageCircle className="w-3.5 h-3.5 text-[#ff5708] shrink-0" />
-              <a
-                href={`https://wa.me/${COACH_INFO.phoneWhatsApp}`}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-[#ff5708] font-semibold text-[#e4e1e7] transition-colors"
-              >
-                +55 11 97168-5090
-              </a>
-            </div>
-            <div className="flex items-center gap-1.5 text-[#94a3b8]">
               <Mail className="w-3.5 h-3.5 text-[#ff5708] shrink-0" />
               <a
                 href={`mailto:${COACH_INFO.email}`}
@@ -140,10 +115,6 @@ export const Footer: React.FC = () => {
               >
                 {COACH_INFO.email}
               </a>
-            </div>
-            <div className="flex items-center gap-1.5 text-[#ffb59c] font-semibold mt-1">
-              <Clock className="w-3.5 h-3.5 text-[#ff5708] shrink-0" />
-              <span>Seg - Sáb: 06:00 - 21:00</span>
             </div>
           </div>
         </div>

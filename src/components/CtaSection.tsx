@@ -58,7 +58,7 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenAssessment }) => {
           <div className="flex flex-wrap items-center justify-center gap-6 mt-6 pt-6 border-t border-[#2a292e]/60 text-xs font-['Space_Grotesk',sans-serif] text-[#94a3b8] uppercase tracking-wider">
             <span className="flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5 text-[#ff5708]" />
-              Resposta em menos de 2 horas
+              Resposta rápida
             </span>
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-[#7bd0ff]" />

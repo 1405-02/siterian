@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, ArrowRight, ArrowLeft, CheckCircle2, Dumbbell, ShieldAlert, Sparkles, Send } from 'lucide-react';
+import { X, ArrowRight, ArrowLeft, CheckCircle2, ShieldAlert, Sparkles, Send } from 'lucide-react';
 import { COACH_INFO } from '../data/fitnessData';
 
 interface AssessmentModalProps {

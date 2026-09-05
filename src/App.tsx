@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
-import { StatsBar } from './components/StatsBar';
 import { AboutSection } from './components/AboutSection';
 import { MethodologySection } from './components/MethodologySection';
 import { PlansSection } from './components/PlansSection';
-import { CalculatorSection } from './components/CalculatorSection';
-import { ResultsSection } from './components/ResultsSection';
-import { FaqSection } from './components/FaqSection';
 import { CtaSection } from './components/CtaSection';
 import { Footer } from './components/Footer';
 import { AssessmentModal } from './components/AssessmentModal';
@@ -52,32 +48,20 @@ export function App() {
           onExplorePlans={scrollToPlans}
         />
 
-        {/* 2. Numerical Metrics & Authority Bar */}
-        <StatsBar />
-
-        {/* 3. Quem é Rian Martins (Bio, Manifesto & 4 Features) */}
+        {/* 2. Quem é Rian Martins (Bio, Manifesto & 4 Features) */}
         <AboutSection />
 
-        {/* 4. Os 4 Pilares da Metodologia */}
+        {/* 3. Os 4 Pilares da Metodologia */}
         <MethodologySection
           onOpenAppPreview={() => setIsAppPreviewOpen(true)}
         />
 
-        {/* 5. Tabela de Planos & Consultoria */}
+        {/* 4. Tabela de Planos & Consultoria */}
         <PlansSection
           onSelectPlan={(plan) => setSelectedPlan(plan)}
         />
 
-        {/* 6. Simulador Interativo Biomecânico & Metabólico */}
-        <CalculatorSection />
-
-        {/* 7. Prova Social & Resultados Comprovados */}
-        <ResultsSection />
-
-        {/* 8. Dúvidas Frequentes (FAQ) */}
-        <FaqSection />
-
-        {/* 9. Chamada para Ação Decisiva */}
+        {/* 5. Chamada para Ação Decisiva */}
         <CtaSection
           onOpenAssessment={() => setIsAssessmentOpen(true)}
         />

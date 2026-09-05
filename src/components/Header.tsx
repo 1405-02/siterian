@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, User, ArrowRight, Dumbbell } from 'lucide-react';
+import { Menu, X, User, ArrowRight } from 'lucide-react';
 import { COACH_INFO } from '../data/fitnessData';
 
 interface HeaderProps {
@@ -18,9 +18,6 @@ export const Header: React.FC<HeaderProps> = ({
     { label: 'Sobre Rian', href: '#sobre' },
     { label: 'Metodologia', href: '#metodologia' },
     { label: 'Planos & Consultoria', href: '#planos' },
-    { label: 'Resultados', href: '#resultados' },
-    { label: 'Calculadora', href: '#calculadora' },
-    { label: 'FAQ', href: '#faq' },
   ];
 
   return (
@@ -28,8 +25,13 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo & Name */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#ff5708] to-[#aa3600] flex items-center justify-center text-white shadow-[0_2px_12px_rgba(255,87,8,0.35)] group-hover:scale-105 transition-transform duration-200">
-            <Dumbbell className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 rounded-lg overflow-hidden bg-black border border-[#ff5708]/40 flex items-center justify-center shadow-[0_2px_12px_rgba(255,87,8,0.35)] group-hover:scale-105 transition-transform duration-200 shrink-0">
+            <img
+              src="/images/logo.png"
+              alt="Logo Team Rian Martins"
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-['Oswald',sans-serif] text-xl font-bold uppercase tracking-wider text-[#e4e1e7] leading-tight">

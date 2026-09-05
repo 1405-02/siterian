@@ -15,10 +15,10 @@ export const COACH_INFO = {
   city: 'Bragança Paulista',
   state: 'SP',
   locationDisplay: 'Bragança Paulista - SP (Presencial)',
-  instagram: 'https://instagram.com/rianmartinscoach',
+  instagram: 'https://www.instagram.com/rianmartins_personal',
   youtube: 'https://youtube.com',
   manifesto: '“Corpos de elite não são construídos pelo sofrimento irracional, mas pela constância inteligente e aplicação cirúrgica da biomecânica.”',
-  bio: 'Graduado em Educação Física com especialização profunda em Biomecânica Clínica, Fisiologia Avançada do Exercício e Periodização de Força. Com atendimento presencial exclusivo em Bragança Paulista (SP) e consultoria online global, Rian Martins (CREF 194592-G/SP) refinou uma abordagem de mentoria que remove o ruído e entrega resultados tangíveis.',
+  bio: 'Graduado em Educação Física, com Pós Graduação em Condicionamento Físico e Musculação, estudante de nutrição e com mais de 30 cursos na área de treinamento. Com atendimento presencial exclusivo em Bragança Paulista (SP) e consultoria online global, Rian Martins (CREF 194592-G/SP) refinou uma abordagem de treinamento que prioriza acompanhamento, individualidade e resultados (tudo exclusivo para sua realidade).',
   photos: {
     hero: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAqn_xTQSdqBmdJsM5HSs51jZkwFgOomejGQ8s-GxMmrLSTEWc8L1wa6mb8EozCcZHa7_VLVUERtG3wMJn84T6hAXcDkx2eOlmGM7HAikr9Oo5f_Ulb1anM9NQ4jvU92XWfjxe76r1JtFxdUAb6Z-Bk8U52s0hV-tcQqjyUtpZtYt8wLGk4J68pf701VbFHh6RjTnubyautPVuDwIXYwazdGdRMHzo5TjE1dy0zu6-iA1T8qH0YrZrMRuci4WcEg4y1',
     coachingAction: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCHGOWjci6Wpa5zWgttWwoNQzVStVkOt9-Qq6DI0UZxNBuBZS3uLxAd73umMVZ4GqR8N8ajmdCeG6fczx6zZhx9kP2WNw6LvYMjJebIX1ZUaxHL7FewtYzVzGRl6zjA4LPNwvVodWhnk4trqxlEu61smkx5o9IZ8ugzKLKRlOaef_2V0UuOUn7537wM3ikGMxJhpHmfbGWLB0D3UuvdNVTQkkeT8nQlInzl9YpY8eNxtNivZRvIWmI',
@@ -30,12 +30,12 @@ export const METHODOLOGY_PILLARS: Pillar[] = [
   {
     id: 'pilar-1',
     number: '01',
-    title: 'Avaliação Biomecânica & Postural',
-    description: 'Mapeamento de mobilidade, encurtamentos, assimetrias de membros e histórico de lesões para blindar o corpo antes de sobrecarregar.',
+    title: 'AVALIAÇÃO CORPORAL: FÍSICA, BIOMECÂNICA E POSTURAL',
+    description: 'Avaliando seus pontos fracos e fortes, sua condição biomecânica e sua postura, podemos montar uma periodização altamente eficiente.',
     tag: 'Diagnóstico Preciso',
     icon: 'analytics',
     details: {
-      overview: 'Uma análise visual minuciosa dos seus padrões básicos de movimento (agachamento, flexão de quadril, empurrada vertical/horizontal).',
+      overview: 'Avaliando seus pontos fracos e fortes, sua condição biomecânica e sua postura, podemos montar uma periodização altamente eficiente.',
       bulletPoints: [
         'Detecção de compensações articulares na coluna lombar e joelhos',
         'Avaliação de flexibilidade ativa e passiva',
@@ -48,11 +48,11 @@ export const METHODOLOGY_PILLARS: Pillar[] = [
     id: 'pilar-2',
     number: '02',
     title: 'Periodização Estruturada',
-    description: 'Divisão de micro e macrociclos de treino: fases de adaptação neural, hipertrofia tensional e deloads estratégicos calculados.',
+    description: 'Macrociclos e microciclos estruturados de acordo com suas necessidades, tempo disponível para treinar e rotina, visando aumentar a aderência e potencializar ao máximo os resultados.',
     tag: 'Evolução Contínua',
     icon: 'tune',
     details: {
-      overview: 'Você nunca treinará por acaso. Cada semana obedece a uma curva matemática de volume (séries semanais) e intensidade (% de esforço real).',
+      overview: 'Macrociclos e microciclos estruturados de acordo com suas necessidades, tempo disponível para treinar e rotina, visando aumentar a aderência e potencializar ao máximo os resultados.',
       bulletPoints: [
         'Planejamento de RPE (Percepção Subjetiva de Esforço) e RIR (Repetições em Reserva)',
         'Progressão de carga linear e ondulatória periodizada',
@@ -64,35 +64,35 @@ export const METHODOLOGY_PILLARS: Pillar[] = [
   {
     id: 'pilar-3',
     number: '03',
-    title: 'Suporte Nutricional & Hábitos',
-    description: 'Direcionamento de macronutrientes, hidratação e otimização do sono. Sinergia total entre combustível metabólico e esforço físico.',
-    tag: 'Adesão & Energia',
-    icon: 'restaurant',
+    title: 'SUPORTE ONLINE DIRETAMENTE COM O TREINADOR',
+    description: 'Teve qualquer dúvida? Entre em contato DIRETAMENTE com o treinador, via WhatsApp, isso mesmo: sem atendimento automático, assim que possível Rian entrará em contato para responder suas dúvidas e ajustar algo no seu treino. Você pode enviar vídeos das suas execuções para correção do exercício, tirar dúvidas referentes ao treino e pedir dicas para otimização dos resultados!',
+    tag: 'WhatsApp Direto',
+    icon: 'chat',
     details: {
-      overview: 'Sem dietas punitivas ou restrições incompatíveis com reuniões de trabalho, viagens e vida familiar.',
+      overview: 'Teve qualquer dúvida? Entre em contato DIRETAMENTE com o treinador, via WhatsApp, isso mesmo: sem atendimento automático, assim que possível Rian entrará em contato para responder suas dúvidas e ajustar algo no seu treino. Você pode enviar vídeos das suas execuções para correção do exercício, tirar dúvidas referentes ao treino e pedir dicas para otimização dos resultados!',
       bulletPoints: [
-        'Cálculo de metas diárias de proteína, carboidratos e gorduras boas',
-        'Timing de carboidratos em volta da janela do treino para render mais',
-        'Otimização do sono REM e higiene de sono para recuperação hormonal'
+        'Contato direto no WhatsApp com o Coach Rian (sem robôs)',
+        'Envio de vídeos dos exercícios para análise e correção de execução',
+        'Ajustes ágeis na periodização e dicas para potencializar seus ganhos'
       ],
-      deliverable: 'Guia de substituições inteligentes e estratégias para manter o foco em jantares e viagens.'
+      deliverable: 'Canal aberto direto para esclarecer dúvidas e garantir segurança e evolução constante.'
     }
   },
   {
     id: 'pilar-4',
     number: '04',
-    title: 'Monitoramento & App Exclusivo',
-    description: 'Controle de cargas em aplicativo VIP, vídeos de execução em alta definição e feedback semanal direto com Rian para ajustes ágeis.',
-    tag: 'Zero Dúvidas',
+    title: 'MONITORAMENTO & APP',
+    description: 'Treinos via aplicativo, com vídeos dos exercícios, espaço para marcar suas cargas, já vem com os informativos de séries, repetições, e observações feitas pelo treinador. Você pode adicionar seu feedback pós treino no app e usar o cronômetro já incluso, para calcular o tempo de intervalo; ou seja, TUDO na palma da sua mão para seu resultado ser o melhor!',
+    tag: 'Tudo no App',
     icon: 'smartphone',
     details: {
-      overview: 'Você leva o método no bolso. Registre suas cargas, assista às instruções de postura em vídeo 4K e fale direto com o Coach.',
+      overview: 'Treinos via aplicativo, com vídeos dos exercícios, espaço para marcar suas cargas, já vem com os informativos de séries, repetições, e observações feitas pelo treinador. Você pode adicionar seu feedback pós treino no app e usar o cronômetro já incluso, para calcular o tempo de intervalo; ou seja, TUDO na palma da sua mão para seu resultado ser o melhor!',
       bulletPoints: [
-        'Biblioteca com demonstrações em vídeo e alertas de erros comuns',
-        'Histórico de progressão de carga e repetições de cada exercício',
-        'Envio semanal de vídeos da sua execução para correção direta por WhatsApp'
+        'Vídeos demonstrativos de cada exercício com séries e repetições',
+        'Registro de cargas e histórico de evolução sessão a sessão',
+        'Cronômetro de intervalo integrado e espaço para feedback pós-treino'
       ],
-      deliverable: 'Acesso imediato ao App exclusivo Team Rian no iOS e Android.'
+      deliverable: 'Acesso completo ao aplicativo Team Rian para iOS e Android.'
     }
   }
 ];
@@ -108,10 +108,11 @@ export const PLANS: Plan[] = [
     periodText: '/trimestral',
     isFeatured: false,
     features: [
-      { text: 'Treino prescrito no App com vídeos em HD', included: true },
-      { text: 'Suporte diário via WhatsApp com o Coach', included: true },
-      { text: 'Ajustes de carga e volume a cada 15 dias', included: true },
-      { text: 'Análise de execução de movimentos por vídeo', included: true },
+      { text: 'Treino prescrito no App com vídeos e instruções', included: true },
+      { text: 'Avaliações do físico', included: true },
+      { text: 'Suporte diário via WhatsApp diretamente com Rian', included: true },
+      { text: 'Ajustes planejados na periodização', included: true },
+      { text: 'Análise da execução dos movimentos por vídeo', included: true },
       { text: 'Sem sessões presenciais', included: false }
     ],
     ctaText: 'Falar com Rian'
@@ -121,17 +122,15 @@ export const PLANS: Plan[] = [
     name: 'Personal VIP Presencial',
     subtitle: 'Acompanhamento presencial exclusivo em Bragança Paulista - SP (academias ou condomínios).',
     badge: 'Mais Exclusivo',
-    priceMonthly: 890,
-    priceQuarterly: 890,
+    priceMonthly: 780,
+    priceQuarterly: 780,
     periodText: '/mês',
     isFeatured: true,
     features: [
-      { text: '2x por Semana', included: true, highlight: true },
-      { text: 'Presença de Rian Martins em cada repetição e série', included: true },
-      { text: 'Correção biomecânica e postural em tempo real', included: true },
-      { text: 'Avaliação com bioimpedância e adipometria periódica', included: true },
+      { text: '2x por Semana com a presença de Rian Martins', included: true, highlight: true },
+      { text: 'Avaliação física presencial', included: true },
       { text: 'Acesso total ao App para os treinos complementares', included: true },
-      { text: 'Atendimento presencial exclusivo em Bragança Paulista, SP', included: true }
+      { text: 'Orientação, correções, feedbacks, ajustes finos, ao vivo', included: true }
     ],
     ctaText: 'Falar com Rian'
   },
@@ -145,58 +144,16 @@ export const PLANS: Plan[] = [
     periodText: '/mês',
     isFeatured: false,
     features: [
-      { text: '4x por Semana', included: true, highlight: true },
-      { text: 'Presença de Rian Martins em cada repetição e série', included: true },
-      { text: 'Correção biomecânica e postural em tempo real', included: true },
-      { text: 'Avaliação com bioimpedância e adipometria periódica', included: true },
+      { text: '4x por Semana com a presença de Rian Martins', included: true, highlight: true },
+      { text: 'Avaliação física presencial', included: true },
       { text: 'Acesso total ao App para os treinos complementares', included: true },
-      { text: 'Atendimento presencial exclusivo em Bragança Paulista, SP', included: true }
+      { text: 'Orientação, correções, feedbacks, ajustes finos, ao vivo', included: true }
     ],
     ctaText: 'Falar com Rian'
   }
 ];
 
-export const STUDENT_RESULTS: StudentResult[] = [
-  {
-    id: 'case-lucas',
-    name: 'Lucas Almeida',
-    role: 'Empresário',
-    plan: 'Consultoria VIP',
-    category: 'emagrecimento',
-    metric: '-14 kg em 4 meses',
-    metricColor: '#ff5708',
-    testimonial: '“Eu vinha de 5 anos estagnado, com dores lombares terríveis. O Rian corrigiu meu agachamento na primeira semana e a queima de gordura veio com consistência. Minha disposição hoje é outra.”',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAU-pFU87lxlQG7OKh80Mj8jRTKauNT1vnGyAERJoHhO13L0B4u88uk9x7uREoK8xftLyvMWfCd7wdTcXwIKwv42FxXdww_BQrS4Ps6j9MCagC6NVhZh-QrKWVq2Yh8nw3r42TwJjh-TsdxdBuo2GU_QDYNXR4kvQxFbW7Z_3vG0e8oQVf2kdlgKhT32vxj7dKUVdXx0cGdTl7SlR0RC5u4TJNJa9_z7-xI94O8HGKlbVZSv4z5GfE',
-    rating: 5,
-    timeframe: '4 meses'
-  },
-  {
-    id: 'case-beatriz',
-    name: 'Beatriz Ramos',
-    role: 'Advogada',
-    plan: 'Consultoria Online',
-    category: 'hipertrofia',
-    metric: '+6.5 kg de Massa Magra',
-    metricColor: '#7bd0ff',
-    testimonial: '“Achei que por treinar online seria distante, mas o Rian responde minhas dúvidas no WhatsApp mais rápido do que qualquer professor presencial que tive. O acompanhamento é cirúrgico!”',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDnTZwV-TKFoZVwo-bLl4NvIWG5FS_76uXWUMolKNlazNGkDGk6sHDeWakidTaA3exaJBSuW2BECgMlI2wplRO9IexyzA7nQsn4KkWTBLU1zeyG8Yj6Ud9QnWCywwLrWyZszz3HNBhZyM5jPyqrfLMjtsqoRfBsdBg_Hu_YLnc3F5RkVjtkZ-orFKCerMEHl7VUuDMjWhIIs8s5lmNiyN3E49tuhT3GRtZ_SOilZTRXcyCt0hpUGA8',
-    rating: 5,
-    timeframe: '6 meses'
-  },
-  {
-    id: 'case-rodrigo',
-    name: 'Rodrigo Faria',
-    role: 'Engenheiro',
-    plan: 'Protocolo 90D',
-    category: 'emagrecimento',
-    metric: 'De 28% para 12% de Gordura',
-    metricColor: '#ffb596',
-    testimonial: '“O Protocolo 90 Dias foi um divisor de águas. Não apenas perdi a barriga que me incomodava, mas aprendi a treinar com intensidade real sem me lesionar. Valeu cada centavo investido.”',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA7-QmK8Fo9F0M8cBKGt8TSMZ0sl6xt-U_h-h7pLz4uFpE3l8HSn0-f6nnGip8SseJntfVePKun9sJBWtr5_UmrEwWLIKveqvpaBeeXd5NWifApmBjPiyZAW1putRoziJMJ2oOOvAcB5_4nxfpwvo2qiq_fxb88hzxYctZsmxfOmlLxu6bcaOoClGKPeCQPiA4QebuniFE1Y-orRsWIeah4xLyEVHCR1DNg0AmwuLGZzP5UJtkcRzA',
-    rating: 5,
-    timeframe: '90 dias'
-  }
-];
+export const STUDENT_RESULTS: StudentResult[] = [];
 
 export const FAQ_ITEMS: FAQItem[] = [
   {

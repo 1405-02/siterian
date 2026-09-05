@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Play, Dumbbell, Clock, CheckCircle2, ChevronRight, Volume2, Flame, Award } from 'lucide-react';
+import { X, Play, Clock, CheckCircle2, ChevronRight, Volume2, Flame, Award } from 'lucide-react';
 import { COACH_INFO, PILLAR_SAMPLE_EXERCISES } from '../data/fitnessData';
 
 interface AppPreviewModalProps {
@@ -40,12 +40,17 @@ export const AppPreviewModal: React.FC<AppPreviewModalProps> = ({ isOpen, onClos
         {/* Modal Header */}
         <div className="flex items-center justify-between pb-4 border-b border-[#2a292e]">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-[#ff5708] flex items-center justify-center text-white">
-              <Dumbbell className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-xl overflow-hidden bg-black border border-[#ff5708]/40 flex items-center justify-center shrink-0 shadow-md">
+              <img
+                src="/images/logo.png"
+                alt="Logo Team Rian Martins"
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div>
               <h3 className="font-['Oswald',sans-serif] text-xl uppercase font-bold text-[#e4e1e7]">
-                App Exclusivo Team Rian
+                App Team Rian
               </h3>
               <p className="font-['Space_Grotesk',sans-serif] text-[11px] text-[#ffb59c] uppercase font-semibold">
                 Área do Aluno • Tecnologia &amp; Biomecânica no Bolso
