@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { MethodologySection } from './components/MethodologySection';
+import { ProtocolsSection } from './components/ProtocolsSection';
 import { PlansSection } from './components/PlansSection';
 import { CtaSection } from './components/CtaSection';
 import { Footer } from './components/Footer';
@@ -11,18 +12,29 @@ import { AppPreviewModal } from './components/AppPreviewModal';
 import { PlanEnrollModal } from './components/PlanEnrollModal';
 import { MessageCircle } from 'lucide-react';
 import { COACH_INFO, PLANS } from './data/fitnessData';
-import { Plan } from './types';
+import { Plan, ProtocolItem } from './types';
 
 export function App() {
   const [isAssessmentOpen, setIsAssessmentOpen] = useState(false);
   const [isAppPreviewOpen, setIsAppPreviewOpen] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState<Plan | null>(null);
+  const [selectedPlan, setSelectedPlan] = useState<any | null>(null);
 
   const scrollToPlans = () => {
     const el = document.getElementById('planos');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleSelectProtocol = (protocol: ProtocolItem) => {
+    setSelectedPlan({
+      id: protocol.id,
+      name: protocol.title,
+      subtitle: protocol.description,
+      isProtocol: true,
+      features: [],
+      ctaText: 'Falar com Rian',
+    });
   };
 
   const handleFloatingWhatsApp = () => {
@@ -56,12 +68,17 @@ export function App() {
           onOpenAppPreview={() => setIsAppPreviewOpen(true)}
         />
 
-        {/* 4. Tabela de Planos & Consultoria */}
+        {/* 4. Protocolos Especiais (Novo) */}
+        <ProtocolsSection
+          onSelectProtocol={handleSelectProtocol}
+        />
+
+        {/* 5. Tabela de Planos & Consultoria */}
         <PlansSection
           onSelectPlan={(plan) => setSelectedPlan(plan)}
         />
 
-        {/* 5. Chamada para Ação Decisiva */}
+        {/* 6. Chamada para Ação Decisiva */}
         <CtaSection
           onOpenAssessment={() => setIsAssessmentOpen(true)}
         />

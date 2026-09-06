@@ -46,6 +46,15 @@ export interface FAQItem {
   category?: string;
 }
 
+export interface ProtocolItem {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  ctaText: string;
+}
+
 export interface AssessmentData {
   goal: string;
   experience: string;

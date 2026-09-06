@@ -1,4 +1,4 @@
-import { Plan, Pillar, StudentResult, FAQItem } from '../types';
+import { Plan, Pillar, StudentResult, FAQItem, ProtocolItem } from '../types';
 
 export const COACH_INFO = {
   name: 'Rian Martins',
@@ -214,5 +214,48 @@ export const PILLAR_SAMPLE_EXERCISES = [
     biomechanicsTip: 'Foco no quadril se projetando posteriormente, mantendo neutra a coluna torácica e cervical.',
     tempo: '3-1-1-0',
     intensity: 'RPE 8'
+  }
+];
+
+export const PROTOCOLS: ProtocolItem[] = [
+  {
+    id: 'protocolo-fast',
+    title: 'PROTOCOLO FAST',
+    description: 'ESSE É PRA VOCÊ, QUE NÃO TREINA POR FALTA DE TEMPO!\n\nRian Martins desenvolveu uma metodologia que une: rapidez, eficiência e resultados.',
+    image: '/images/protocols/fast.png?v=5',
+    imageAlt: 'PROTOCOLO FAST - Team Rian Martins',
+    ctaText: 'Falar com Rian'
+  },
+  {
+    id: 'protocolo-gluteos-3d',
+    title: 'Protocolo Glúteos 3D',
+    description: 'Transforme seus glúteos com esse protocolo que vai mudar a sua estética.',
+    image: '/images/protocols/gluteos.png?v=5',
+    imageAlt: 'Protocolo Glúteos 3D - Team Rian Martins',
+    ctaText: 'Falar com Rian'
+  },
+  {
+    id: 'metodo-ombros-3d',
+    title: 'Método Ombros 3D',
+    description: 'Quer construir ombros de respeito, que mudam a visão e estética do seu shape? Então esse é para você.',
+    image: '/images/protocols/ombros.png?v=5',
+    imageAlt: 'Método Ombros 3D - Team Rian Martins',
+    ctaText: 'Falar com Rian'
+  },
+  {
+    id: 'protocolo-explode-bracos',
+    title: 'Protocolo Explode Braços',
+    description: 'Dificuldade em ganhar braços? Tem vergonha deles? Ou simplesmente quer preencher o shape com braços de respeito? O que você precisa é explodir eles, vem comigo!',
+    image: '/images/protocols/bracos.png?v=5',
+    imageAlt: 'Protocolo Explode Braços - Team Rian Martins',
+    ctaText: 'Falar com Rian'
+  },
+  {
+    id: 'protocolo-explode-coxas',
+    title: 'Protocolo Explode Coxas',
+    description: 'Não sabe o que fazer para evoluir suas coxas? Conquiste a coxa dos seus sonhos com esse protocolo que irá mudar seu shape.',
+    image: '/images/protocols/coxas.png?v=5',
+    imageAlt: 'Protocolo Explode Coxas - Team Rian Martins',
+    ctaText: 'Falar com Rian'
   }
 ];

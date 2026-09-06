@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, ArrowRight, ArrowLeft, CheckCircle2, ShieldAlert, Sparkles, Send } from 'lucide-react';
 import { COACH_INFO } from '../data/fitnessData';
 
@@ -20,6 +20,25 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({ isOpen, onClos
     email: '',
   });
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -52,17 +71,29 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({ isOpen, onClos
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-xl bg-[#18181d] border border-[#2a292e] rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md animate-fade-in overflow-y-auto"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div
+        className="relative w-full max-w-xl bg-[#18181d] border border-[#2a292e] rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl max-h-[92vh] overflow-y-auto my-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Top glow accent */}
         <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-32 bg-[#ff5708]/20 rounded-full blur-[80px] pointer-events-none" />
 
         {/* Close button */}
         <button
+          type="button"
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-xl bg-[#2a292e] text-[#94a3b8] hover:text-white hover:bg-[#353439] transition-colors cursor-pointer"
+          aria-label="Fechar"
+          className="absolute top-4 right-4 z-20 w-10 h-10 rounded-xl bg-[#25252c] border border-[#35343d] hover:border-[#ff5708] text-[#94a3b8] hover:text-white hover:bg-[#ff5708] flex items-center justify-center transition-all cursor-pointer shadow-md group"
         >
-          <X className="w-5 h-5" />
+          <X className="w-5 h-5 group-hover:scale-110 transition-transform" />
         </button>
 
         {!submitted ? (

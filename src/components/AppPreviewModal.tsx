@@ -25,6 +25,23 @@ export const AppPreviewModal: React.FC<AppPreviewModalProps> = ({ isOpen, onClos
     return () => clearInterval(interval);
   }, [isTimerRunning, restSeconds]);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   const startTimer = (seconds: number) => {
@@ -35,8 +52,18 @@ export const AppPreviewModal: React.FC<AppPreviewModalProps> = ({ isOpen, onClos
   const activeExercise = PILLAR_SAMPLE_EXERCISES[activeExerciseIndex];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-2xl bg-[#131317] border border-[#2a292e] rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md animate-fade-in overflow-y-auto"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div
+        className="relative w-full max-w-2xl bg-[#131317] border border-[#2a292e] rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl max-h-[92vh] flex flex-col my-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Modal Header */}
         <div className="flex items-center justify-between pb-4 border-b border-[#2a292e]">
           <div className="flex items-center gap-3">
