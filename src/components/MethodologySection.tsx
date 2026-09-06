@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { BarChart3, Sliders, Utensils, Smartphone, MessageCircle, CheckCircle, ChevronRight, X } from 'lucide-react';
+import { BarChart3, Sliders, Utensils, Smartphone, MessageCircle, CheckCircle, X } from 'lucide-react';
 import { METHODOLOGY_PILLARS } from '../data/fitnessData';
 import { Pillar } from '../types';
 
 interface MethodologySectionProps {
-  onOpenAppPreview: () => void;
+  onOpenAppPreview?: () => void;
 }
 
-export const MethodologySection: React.FC<MethodologySectionProps> = ({ onOpenAppPreview }) => {
+export const MethodologySection: React.FC<MethodologySectionProps> = () => {
   const [selectedPillar, setSelectedPillar] = useState<Pillar | null>(null);
 
   const getPillarIcon = (iconName: string) => {
@@ -40,7 +40,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({ onOpenAp
             Os 4 Pilares do Team Rian Martins
           </h2>
           <p className="font-['Manrope',sans-serif] text-base sm:text-lg text-[#94a3b8] mt-3 leading-relaxed">
-            Uma metodologia estruturada e replicável. Sem improvisos: cada repetição, carga e intervalo cumpre uma finalidade neurofisiológica planejada.
+            Uma metodologia estruturada e pensada para te atender levando em conta todos os fatores: físicos, rotina, tempo. Você não precisa de tempo, precisa das estratégias e metodologias corretas. Vem comigo nessa, me dê seu problema, que vou ajuda-lo a resolver.
           </p>
         </div>
 
@@ -49,14 +49,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({ onOpenAp
           {METHODOLOGY_PILLARS.map((pillar) => (
             <div
               key={pillar.id}
-              onClick={() => {
-                if (pillar.id === 'pilar-4') {
-                  onOpenAppPreview();
-                } else {
-                  setSelectedPillar(pillar);
-                }
-              }}
-              className="relative p-6 rounded-2xl bg-[#18181d] border border-[#2a292e] flex flex-col justify-between hover:bg-[#1f1f23] hover:border-[#ff5708]/50 transition-all duration-300 group cursor-pointer shadow-md hover:-translate-y-1"
+              className="relative p-6 rounded-2xl bg-[#18181d] border border-[#2a292e] flex flex-col justify-between hover:bg-[#1f1f23] hover:border-[#ff5708]/40 transition-all duration-300 group shadow-md"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -77,13 +70,9 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({ onOpenAp
                 </p>
               </div>
 
-              <div className="mt-8 pt-4 border-t border-[#2a292e]/60 flex items-center justify-between">
+              <div className="mt-8 pt-4 border-t border-[#2a292e]/60 flex items-center">
                 <span className="font-['Space_Grotesk',sans-serif] text-xs uppercase tracking-wider text-[#ffb59c] font-bold">
                   {pillar.tag}
-                </span>
-                <span className="text-xs text-[#94a3b8] group-hover:text-[#ff5708] flex items-center gap-1 font-['Space_Grotesk',sans-serif] transition-colors">
-                  {pillar.id === 'pilar-4' ? 'Abrir App' : 'Ver detalhes'}
-                  <ChevronRight className="w-3.5 h-3.5" />
                 </span>
               </div>
             </div>

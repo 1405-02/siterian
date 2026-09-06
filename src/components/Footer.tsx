@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="font-['Manrope',sans-serif] text-xs sm:text-sm text-[#94a3b8] pr-4 leading-relaxed">
-              Treinamento de elite, biomecânica clínica e assessoria de alta performance voltada para transformação corporal e mental definitiva.
+              Treinamento de elite e assessoria de alta performance voltada para transformação corporal com estratégia e metodologia.
             </p>
 
             <div className="flex flex-wrap items-center gap-2 mt-2">
@@ -120,21 +120,10 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-14 pt-6 border-t border-[#2a292e]/60 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left text-xs font-['Space_Grotesk',sans-serif]">
+        <div className="mt-14 pt-6 border-t border-[#2a292e]/60 flex items-center justify-center text-center text-xs font-['Space_Grotesk',sans-serif]">
           <p className="text-[#94a3b8]">
             © {new Date().getFullYear()} Team Rian Martins. Todos os direitos reservados. Treinamento de Alta Performance.
           </p>
-          <div className="flex items-center gap-5 text-[#94a3b8]">
-            <span className="hover:text-[#e4e1e7] cursor-pointer transition-colors">
-              Privacidade
-            </span>
-            <span className="hover:text-[#e4e1e7] cursor-pointer transition-colors">
-              Termos de Serviço
-            </span>
-            <span className="hover:text-[#e4e1e7] cursor-pointer transition-colors">
-              Código de Ética CREF
-            </span>
-          </div>
         </div>
       </div>
     </footer>

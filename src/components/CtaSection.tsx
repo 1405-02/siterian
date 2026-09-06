@@ -1,12 +1,12 @@
 import React from 'react';
-import { Zap, MessageCircle, Clock, ShieldCheck } from 'lucide-react';
+import { MessageCircle, Clock, ShieldCheck } from 'lucide-react';
 import { COACH_INFO } from '../data/fitnessData';
 
 interface CtaSectionProps {
-  onOpenAssessment: () => void;
+  onOpenAssessment?: () => void;
 }
 
-export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenAssessment }) => {
+export const CtaSection: React.FC<CtaSectionProps> = () => {
   const handleWhatsAppClick = () => {
     const text = encodeURIComponent(
       'Olá Rian! Gostaria de saber mais sobre as vagas disponíveis para a sua consultoria de alta performance e atendimento presencial em Bragança Paulista.'
@@ -22,8 +22,13 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenAssessment }) => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="p-8 sm:p-14 lg:p-20 rounded-3xl bg-[#18181d] border border-[#2a292e] shadow-2xl flex flex-col items-center text-center max-w-4xl mx-auto relative overflow-hidden">
-          <div className="w-16 h-16 rounded-2xl bg-[#ff5708]/15 border border-[#ff5708]/30 flex items-center justify-center text-[#ff5708] mb-6 shadow-inner">
-            <Zap className="w-8 h-8 fill-[#ff5708]" />
+          <div className="w-20 h-20 rounded-2xl overflow-hidden bg-black border border-[#ff5708]/40 flex items-center justify-center mb-6 shadow-[0_4px_25px_rgba(255,87,8,0.25)]">
+            <img
+              src="/images/logo.png"
+              alt="Logo Team Rian Martins"
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
           </div>
 
           <h2 className="font-['Oswald',sans-serif] text-3xl sm:text-4xl lg:text-5xl uppercase text-[#e4e1e7] leading-tight font-bold">
@@ -38,20 +43,13 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenAssessment }) => {
             As vagas para acompanhamento presencial em Bragança Paulista (SP) e consultoria online são limitadas para assegurar o padrão de excelência e acompanhamento minucioso de cada aluno.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <div className="flex justify-center w-full sm:w-auto">
             <button
               onClick={handleWhatsAppClick}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#ff5708] text-white font-['Oswald',sans-serif] text-lg uppercase tracking-wider font-bold hover:scale-[1.03] shadow-[0_8px_35px_rgba(255,87,8,0.45)] hover:bg-[#ff6820] transition-all cursor-pointer"
             >
               <MessageCircle className="w-5 h-5 fill-white" />
               <span>Falar com Rian</span>
-            </button>
-
-            <button
-              onClick={onOpenAssessment}
-              className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-xl bg-[#1b1b1f] border border-[#2a292e] text-[#e4e1e7] font-['Space_Grotesk',sans-serif] text-xs uppercase tracking-wider font-bold hover:bg-[#2a292e] transition-colors cursor-pointer"
-            >
-              Fazer Avaliação Online
             </button>
           </div>
 

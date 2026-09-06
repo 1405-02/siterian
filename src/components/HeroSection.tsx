@@ -27,21 +27,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <span className="w-2 h-2 rounded-full bg-[#ff5708] animate-ping" />
               <span className="w-2 h-2 rounded-full bg-[#ff5708] -ml-4" />
               <span className="font-['Space_Grotesk',sans-serif] text-xs uppercase tracking-wider text-[#ffb59c] font-bold">
-                Vagas Limitadas Presencial em Bragança Paulista SP
+                Vagas limitadas para treinos presenciais em Bragança Paulista/SP
               </span>
             </div>
 
             {/* Main Title */}
             <h1 className="font-['Oswald',sans-serif] text-4xl sm:text-5xl lg:text-[66px] uppercase text-[#e4e1e7] leading-[1.05] tracking-tight font-bold">
-              Personal Trainer em Bragança Paulista &amp; Treinamento de{' '}
+              Personal Trainer em Bragança Paulista e Treinamento com{' '}
               <span className="text-[#ff5708] drop-shadow-[0_2px_18px_rgba(255,87,8,0.35)]">
-                Alta Performance
+                Metodologia Eficiente
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="font-['Manrope',sans-serif] text-base sm:text-lg text-[#94a3b8] max-w-2xl leading-relaxed">
-              Atendimento presencial exclusivo em <span className="text-[#e4e1e7] font-semibold">Bragança Paulista (SP)</span> e consultoria online com o Head Coach Rian Martins. Protocolos sob medida para hipertrofia, emagrecimento definitivo e saúde funcional com base na biomecânica avançada.
+              Atendimento presencial exclusivo em <span className="text-[#e4e1e7] font-semibold">Bragança Paulista (SP)</span> e treinamento online com o Head Coach Rian Martins. Protocolos individualizados e altamente eficientes, voltados para sua realidade.
             </p>
 
             {/* Action Buttons */}
@@ -57,13 +57,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span>Falar no WhatsApp</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-
-              <button
-                onClick={onOpenAssessment}
-                className="inline-flex items-center justify-center px-6 py-4 rounded bg-[#1f1f23] border border-[#2a292e] text-[#e4e1e7] font-['Space_Grotesk',sans-serif] text-sm uppercase tracking-wider font-semibold hover:bg-[#2a292e] hover:border-[#ff5708]/50 transition-colors text-center cursor-pointer"
-              >
-                Avaliação Online Gratuita
-              </button>
             </div>
 
             {/* Fast Authority Badges Mosaic */}
