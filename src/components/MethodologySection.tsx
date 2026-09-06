@@ -40,7 +40,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = () => {
             Os 4 Pilares do Team Rian Martins
           </h2>
           <p className="font-['Manrope',sans-serif] text-base sm:text-lg text-[#94a3b8] mt-3 leading-relaxed">
-            Uma metodologia estruturada e pensada para te atender levando em conta todos os fatores: físicos, rotina, tempo. Você não precisa de tempo, precisa das estratégias e metodologias corretas. Vem comigo nessa, me dê seu problema, que vou ajuda-lo a resolver.
+            Uma metodologia estruturada e pensada para te atender levando em conta todos os fatores: físicos, rotina, tempo. Vem comigo nessa, me dê seu problema, que vou ajuda-lo a resolver.
           </p>
         </div>
 
