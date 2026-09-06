@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram } from 'lucide-react';
 import { COACH_INFO } from '../data/fitnessData';
 
 interface HeaderProps {
@@ -51,8 +51,19 @@ export const Header: React.FC<HeaderProps> = () => {
           ))}
         </nav>
 
-        {/* Right CTA Action */}
-        <div className="flex items-center">
+        {/* Right Actions: Instagram + WhatsApp CTA */}
+        <div className="flex items-center gap-3">
+          <a
+            href={COACH_INFO.instagram}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram @rianmartins_personal"
+            title="Acessar Instagram @rianmartins_personal"
+            className="w-10 h-10 rounded-full bg-[#18181d] border border-[#2a292e] hover:border-[#ff5708] flex items-center justify-center text-[#ffb59c] hover:text-white hover:bg-[#ff5708]/15 transition-all duration-200 group cursor-pointer shadow-sm hover:scale-105"
+          >
+            <Instagram className="w-4 h-4 group-hover:scale-110 transition-transform" />
+          </a>
+
           <a
             href={`https://wa.me/${COACH_INFO.phoneWhatsApp}?text=${encodeURIComponent(
               'Olá Rian! Estou no seu site e gostaria de saber mais sobre a consultoria e o atendimento presencial em Bragança Paulista.'
