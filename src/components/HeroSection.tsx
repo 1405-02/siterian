@@ -41,7 +41,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Subtitle */}
             <p className="font-['Manrope',sans-serif] text-base sm:text-lg text-[#94a3b8] max-w-2xl leading-relaxed">
-              Atendimento presencial exclusivo em <span className="text-[#e4e1e7] font-semibold">Bragança Paulista (SP)</span> e treinamento online com o Head Coach Rian Martins. Protocolos individualizados e altamente eficientes, voltados para sua realidade.
+              Atendimento presencial exclusivo em <span className="text-[#e4e1e7] font-semibold">Bragança Paulista (SP)</span> e treinamento online com o Head Coach Rian Martins.
+              <br />
+              Protocolos individualizados e altamente eficientes, voltados para sua realidade.
             </p>
 
             {/* Action Buttons */}

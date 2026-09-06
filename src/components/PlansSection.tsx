@@ -47,15 +47,9 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onSelectPlan }) => {
                 )}
 
                 <div>
-                  {!isVip && (
+                  {!isVip && plan.badge && (
                     <span className="font-['Space_Grotesk',sans-serif] text-xs uppercase tracking-widest text-[#94a3b8] font-bold">
                       {plan.badge}
-                    </span>
-                  )}
-
-                  {isVip && (
-                    <span className="font-['Space_Grotesk',sans-serif] text-xs uppercase tracking-widest text-[#ffb59c] font-bold">
-                      Máxima Performance Presencial
                     </span>
                   )}
 

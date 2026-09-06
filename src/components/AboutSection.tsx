@@ -31,10 +31,10 @@ export const AboutSection: React.FC = () => {
 
           <div className="space-y-4 font-['Manrope',sans-serif] text-base sm:text-lg text-[#94a3b8] leading-relaxed">
             <p>
-              Graduado em Educação Física, com Pós Graduação em Condicionamento Físico e Musculação, estudante de nutrição e com mais de 30 cursos na área de treinamento.
+              Rian Martins (CREF 194592-G/SP) é graduado em Educação Física, com Pós Graduação em Condicionamento Físico e Musculação, estudante de nutrição e com mais de 30 cursos na área de treinamento, além de mentorias com os principais nomes do treinamento no Brasil.
             </p>
             <p>
-              Com atendimento presencial exclusivo em Bragança Paulista (SP) e consultoria online global, Rian Martins (CREF 194592-G/SP) refinou uma abordagem de treinamento que prioriza acompanhamento, individualidade e resultados (tudo exclusivo para sua realidade).
+              Com atendimento presencial exclusivo em Bragança Paulista (SP) e consultoria online global, ele refinou uma abordagem de treinamento que prioriza acompanhamento, individualidade e resultados (tudo exclusivo para sua realidade) e assim transforma vidas através do Team Rian Martins.
             </p>
           </div>
 

@@ -18,7 +18,7 @@ export const COACH_INFO = {
   instagram: 'https://www.instagram.com/rianmartins_personal',
   youtube: 'https://youtube.com',
   manifesto: '“Corpos de elite não são construídos pelo sofrimento irracional, mas pela constância inteligente e aplicação cirúrgica da biomecânica.”',
-  bio: 'Graduado em Educação Física, com Pós Graduação em Condicionamento Físico e Musculação, estudante de nutrição e com mais de 30 cursos na área de treinamento. Com atendimento presencial exclusivo em Bragança Paulista (SP) e consultoria online global, Rian Martins (CREF 194592-G/SP) refinou uma abordagem de treinamento que prioriza acompanhamento, individualidade e resultados (tudo exclusivo para sua realidade).',
+  bio: 'Rian Martins (CREF 194592-G/SP) é graduado em Educação Física, com Pós Graduação em Condicionamento Físico e Musculação, estudante de nutrição e com mais de 30 cursos na área de treinamento, além de mentorias com os principais nomes do treinamento no Brasil. Com atendimento presencial exclusivo em Bragança Paulista (SP) e consultoria online global, ele refinou uma abordagem de treinamento que prioriza acompanhamento, individualidade e resultados (tudo exclusivo para sua realidade) e assim transforma vidas através do Team Rian Martins.',
   photos: {
     hero: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAqn_xTQSdqBmdJsM5HSs51jZkwFgOomejGQ8s-GxMmrLSTEWc8L1wa6mb8EozCcZHa7_VLVUERtG3wMJn84T6hAXcDkx2eOlmGM7HAikr9Oo5f_Ulb1anM9NQ4jvU92XWfjxe76r1JtFxdUAb6Z-Bk8U52s0hV-tcQqjyUtpZtYt8wLGk4J68pf701VbFHh6RjTnubyautPVuDwIXYwazdGdRMHzo5TjE1dy0zu6-iA1T8qH0YrZrMRuci4WcEg4y1',
     coachingAction: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCHGOWjci6Wpa5zWgttWwoNQzVStVkOt9-Qq6DI0UZxNBuBZS3uLxAd73umMVZ4GqR8N8ajmdCeG6fczx6zZhx9kP2WNw6LvYMjJebIX1ZUaxHL7FewtYzVzGRl6zjA4LPNwvVodWhnk4trqxlEu61smkx5o9IZ8ugzKLKRlOaef_2V0UuOUn7537wM3ikGMxJhpHmfbGWLB0D3UuvdNVTQkkeT8nQlInzl9YpY8eNxtNivZRvIWmI',
@@ -138,7 +138,7 @@ export const PLANS: Plan[] = [
     id: 'protocolo-90d',
     name: 'Personal VIP Presencial',
     subtitle: 'Acompanhamento presencial exclusivo em Bragança Paulista - SP (academias ou condomínios).',
-    badge: 'Intenso',
+    badge: '',
     priceMonthly: 1360,
     priceQuarterly: 1360,
     periodText: '/mês',
